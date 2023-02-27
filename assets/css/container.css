@@ -1,0 +1,231 @@
+.app-container{
+    width: calc(100% - 240px)
+}
+
+
+.app-container-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: var(--header-height);
+    padding: 20px;
+    position: relative;
+}
+
+.app-user-avt{
+    width: 95px;
+    height: 95px;
+}
+
+.app-user-img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.app-user-name p{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 30px;
+    color: var(--text-color);
+}
+
+.app-header-list{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.app-header-link{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.btn-app-acc{
+    background-color: yellow;
+    margin-right: 10px;
+    color: black;
+}
+
+.app-container-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.app-container-nav-list{
+    display: flex;
+    list-style: none;
+    background-color: var(--bg-content-color);
+    padding: 2px;
+    border-radius: 18px;
+}
+
+.app-container-nav-item{
+    padding: 5px 20px;
+    margin: 2px;
+    text-align: center;
+    min-width: 90px;
+    border-radius: 12px;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.app-container-nav-item-active{
+    background-color: var(--bg-content-color);
+}
+
+.app-container-content{
+    width: 100%;
+    padding: 0 4vw;
+}
+
+.app-song{
+    display: flex;
+    height: 270px;
+}
+
+.app-list-img{
+    width: 300px;
+
+}
+
+.app-list-song{
+    width: calc(100% - 300px);
+    overflow:  hidden overlay;
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+    will-change: scroll-position;
+}
+/* Xử lý scroll bar */
+.app-list-song::-webkit-scrollbar {
+    display: none;
+}
+
+.app-list-song:hover::-webkit-scrollbar {
+    display: block;
+    width: 4px;
+}
+
+.app-list-song::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: transparent;
+}
+
+.app-list-song::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+}
+  
+
+.app-list-song::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Xử lý scroll bar */
+
+.song-list{
+    list-style: none;
+}
+
+.song-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.song-item:hover{
+    background-color: var(--bg-content-color);
+}
+
+.song-item:hover .song-img img{
+    opacity: 0.3;
+}
+
+.song-item:hover .hover-play{
+    display: block;
+}
+
+.song-left{
+    display: flex;
+    align-items: center;
+}
+
+.song-img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.song-img img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.hover-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.hover-play-icon{
+    color: var(--text-color);
+    font-size: 2.8rem;
+}
+
+.song-name{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.song-singer{
+    color: var(--text-blur-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.song-option-icon{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-left: 10px;
+}
+
+/* app title */
+.app-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.title-left{
+    display: flex;
+    align-items: center;
+}
+
+.title-left h2{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+.title-left i{
+    margin-left: 10px;
+    font-size: 2rem;
+    color: var(--text-color);
+}
