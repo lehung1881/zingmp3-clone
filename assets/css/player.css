@@ -1,0 +1,125 @@
+.player{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--player-height);
+    background-color: var(--layout-bg);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-primary) ;
+}
+
+.player-info-song{
+    display: flex;
+    align-items: center;
+}
+.player-info-img{
+    width: 70px;
+    height: 70px;
+}
+.player-info-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.player-song{
+    margin: 0 10px;
+}
+
+
+.player-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.node-control{
+    display: flex;
+    align-items: center;
+}
+
+.node-icon{
+    color: var(--text-color);
+    display: block;
+    padding: 0 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.node-icon-play{
+    font-size: 3.2rem;
+}
+
+
+
+.progress{
+    display: flex;
+    margin-top: 6px;
+}
+
+.input-progress{
+    margin: 0 10px;
+}
+
+.inp-progress{
+    width: 380px;
+}
+
+.progressTime{
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.player-control-vol{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.player-control-vol .node-icon{
+    padding: 0 10px;
+}
+
+.player-control-outside{
+    width: 350px;
+}
+.inp-progress-vol{
+    width: 100px;
+}
+
+.progress-range {
+    -webkit-appearance: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.progress-range::-webkit-slider-thumb{
+    appearance: none;
+    width: 1px;
+    height: 18px;
+    cursor: pointer;
+    border-radius: 999px;
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+
+.progress-range::-webkit-slider-runnable-track{
+    height: 5px;
+    width: 100%;
+    background-color: var(--border-primary);
+    border-radius: 2px;
+}
+
+.progress-range::-webkit-slider-thumb{
+    height: 5px;
+    width: 5px;
+    width: 100%;
+    background-color: var(--text-color);
+    border-radius: 2px;
+}

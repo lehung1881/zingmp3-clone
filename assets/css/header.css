@@ -9,6 +9,7 @@
     height: var(--header-height);
     justify-content: space-between;
     align-items: center;
+    background-color: var(--layout-bg);
 }
 
 .header-with-search{

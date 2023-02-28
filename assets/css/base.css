@@ -12,6 +12,14 @@
     --sidebar-bg: rgba(255, 255, 255, 0.05);
     /* player */
     --player-height: 90px;
+
+    /* slide */
+    --slide-width: 290px;
+    --scale-rate-second: calc(196 / 230);
+    --scale-rate-third: calc(162 / 230);
+    --offset-x-second: calc(0px - ((230px - (230px * var(--scale-rate-second))) / 2 + 20px));
+    --offset-x-third: calc(0px - ((230px - (230px * var(--scale-rate-third))) / 2 + 40px));
+    
 }
 
 *{
@@ -47,4 +55,17 @@ html{
     padding: 5px 20px;
     /* height: 2rem; */
     line-height: 2rem;
+}
+
+.button + .button{
+    margin-left: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul{
+    list-style: none;
 }
